@@ -1,0 +1,281 @@
+{
+    "inicio": {
+        "hero": {
+            "titulo": "La plataforma de certificaciones digitales seguras y confiables.",
+            "descripcion": "Acelere su organización en la economía competitiva basada en habilidades con credenciales digitales seguras.",
+            "boton": "Hablar con un agente",
+            "mensajeWhatsapp": "Hola, me gustaría obtener más información sobre Certif."
+        },
+        "certificaciones": {
+            "titulo": "La nueva era de las certificaciones digitales",
+            "descripcion": "Certif es más que un certificado, es un símbolo de exclusividad y autenticidad.",
+            "beneficios": [
+                {
+                    "titulo": "Autenticidad garantizada",
+                    "descripcion": "Tecnología NFT blockchain inalterable."
+                },
+                {
+                    "titulo": " Exclusividad y prestigio",
+                    "descripcion": "Certificados con validez única."
+                },
+                {
+                    "titulo": "Seguridad y confianza",
+                    "descripcion": "Verificación instantánea en línea."
+                }
+            ],
+            "boton": "Descubre más"
+        },
+        "verificacion": {
+            "titulo": "🔍 Verificación de certificaciones",
+            "descripcion": "Encuentra información sobre tu acreditación, ingresa el codigo de tu certficado.",
+            "placeholder": "Código de Certificado",
+            "boton": "Buscar"
+        },
+        "cta": {
+            "titulo": "¿Listo para empezar?",
+            "descripcion": "Habla con nuestro equipo de ventas para obtener más información y comenzar hoy mismo.",
+            "boton": "Habla con ventas"
+        }
+    },
+    "servicios": {
+        "hero": {
+            "titulo": "Digitaliza tus certificaciones con Certif",
+            "descripcion": "Asegura autenticidad, exclusividad y prestigio en el mundo digital.",
+            "beneficios": [
+                "Emite certificados y credenciales digitales en minutos.",
+                "Aumenta la confianza y el reconocimiento de tus acreditados.",
+                "Facilita la validación con tecnología segura e inalterable."
+            ],
+            "boton": "Solicita nuestros servicios"
+        },
+        "certificacion": {
+            "titulo": "Certifica con confianza",
+            "descripcion": "Simplifica la emisión de certificados y mejora la reputación de tu empresa.",
+            "pasos": [
+                "Regístrate y configura tu empresa.",
+                "Personaliza tus certificados e insignias digitales.",
+                "Emite y gestiona acreditaciones con respaldo blockchain."
+            ],
+            "boton": "Solicita una consulta"
+        },
+        "contacto": {
+            "titulo": "¿Necesitas ayuda? Estamos aquí para ti",
+            "descripcion": "En Certif, sabemos que la confianza y la seguridad son fundamentales cuando se trata de certificaciones digitales. Si tienes dudas sobre cómo funciona nuestra plataforma, necesitas asistencia con la emisión de certificados o simplemente quieres conocer más sobre nuestros servicios, estamos listos para ayudarte.",
+            "detalle": "Nuestro equipo de soporte especializado está disponible para responder todas tus consultas en menos de 24 horas. Queremos asegurarnos de que tu experiencia con Certif sea fluida, segura y eficiente.",
+            "datos": {
+                "telefono": "Teléfono: +51 935 827 678",
+                "correo": "Correo electrónico: soporte@certif.digital"
+            },
+            "formulario": {
+                "nombre": "Nombre",
+                "email": "Email",
+                "mensaje": "Mensaje",
+                "boton": "Enviar consulta"
+            }
+        }
+    },
+    "busqueda": {
+        "titulo": "Verificación y Búsqueda de Certificaciones",
+        "descripcion": "Encuentra información sobre acreditados y empresas que confían en Certif.",
+        "perfil": {
+            "titulo": "Busca un Perfil Certificado",
+            "descripcion": "Encuentra profesionales certificados y verifica sus credenciales.",
+            "placeholder": "Nombre, número de certificado",
+            "boton": "Buscar Certificaciones",
+            "sinResultados": "No se encontraron perfiles."
+        },
+        "empresa": {
+            "titulo": "Busca una Empresa Partner",
+            "descripcion": "Descubre empresas e instituciones que certifican con Certif.",
+            "placeholder": "Nombre de empresa",
+            "boton": "Buscar Organizaciones",
+            "sinResultados": ""
+        },
+        "alertas": {
+            "perfilVacio": "Ingrese un nombre o número de certificado para buscar.",
+            "empresaVacio": "Ingrese el nombre de una empresa para buscar."
+        }
+    },
+    "funcionamiento": {
+        "seccionFunciona": {
+            "titulo": "¿Cómo funciona?",
+            "descripcion": "Descubre cómo Certif facilita la certificación para empresas y acreditados.",
+            "empresas": {
+                "titulo": "Certifica con confianza",
+                "descripcion": "Simplifica la emisión de certificados y mejora la reputación de tu organización.",
+                "pasos": [
+                    "Regístrate y configura tu empresa.",
+                    "Personaliza certificados e insignias digitales.",
+                    "Emite y gestiona acreditaciones con respaldo blockchain."
+                ],
+                "boton": "Solicita una consulta"
+            },
+            "acreditados": {
+                "titulo": "Certifica y comparte tu éxito",
+                "descripcion": "Guarda, valida y comparte tus certificaciones de manera segura.",
+                "pasos": [
+                    "Recibe tu certificado e insignia digital.",
+                    "Verifica su autenticidad en Certif.",
+                    "Compártelo en redes y plataformas profesionales."
+                ],
+                "boton": "Explora tus certificaciones"
+            }
+        },
+        "seccionPorQueCertif": {
+            "titulo": "¿Por qué Certif?",
+            "descripcion": "Las ventajas que hacen de Certif la mejor opción en certificaciones digitales.",
+            "subtitulo": "La nueva era de las certificaciones digitales",
+            "subdescripcion": "Más que un certificado, un símbolo de exclusividad y autenticidad.",
+            "beneficios": [
+                {
+                    "titulo": "Autenticidad garantizada",
+                    "descripcion": "Tecnología NFT blockchain inalterable."
+                },
+                {
+                    "titulo": "Exclusividad y prestigio",
+                    "descripcion": "Certificados con validez única."
+                },
+                {
+                    "titulo": "Seguridad y confianza",
+                    "descripcion": "Verificación instantánea en línea."
+                }
+            ],
+            "boton": "Descubre más"
+        },
+        "seccionSoporte": {
+            "titulo": "Soporte & Contacto",
+            "descripcion": "Contáctanos para resolver tus dudas y recibir asistencia.",
+            "contacto": {
+                "titulo": "¿Necesitas ayuda? Estamos aquí para ti",
+                "descripcion": "Nuestro equipo responderá en menos de 24 horas.",
+                "telefono": "Teléfono: +51 935 827 678",
+                "correo": "Correo: soporte@certif.digital",
+                "formulario": {
+                    "nombre": "Nombre",
+                    "email": "Email",
+                    "mensaje": "Mensaje",
+                    "boton": "Enviar consulta"
+                }
+            }
+        }
+    },
+    "nosotros": {
+        "quienesSomos": {
+            "titulo": "Impulsamos el reconocimiento de tu talento",
+            "descripcion": "En Certif, somos líderes en la emisión y gestión de certificaciones digitales. Nuestro compromiso es ofrecer acreditaciones seguras, exclusivas y con validez global.",
+            "lista": [
+                "Innovamos con tecnología NFT Blockchain para garantizar inalterabilidad.",
+                "Brindamos una experiencia de certificación ágil y confiable.",
+                "Empoderamos a individuos y empresas con credenciales verificables en cualquier parte del mundo."
+            ]
+        },
+        "misionVision": {
+            "mision": {
+                "titulo": "Misión",
+                "descripcion": "Proveer soluciones innovadoras en certificaciones digitales, permitiendo a personas y empresas validar sus habilidades con autenticidad y seguridad."
+            },
+            "vision": {
+                "titulo": "Visión",
+                "descripcion": "Ser la empresa líder global en certificaciones digitales, asegurando que cada acreditación tenga un valor único e inalterable."
+            }
+        },
+        "queHacemos": {
+            "titulo": "¿Qué hacemos?",
+            "opciones": [
+                {
+                    "titulo": "Emisión de Certificados Digitales",
+                    "descripcion": "Acreditamos habilidades con certificados verificables en blockchain."
+                },
+                {
+                    "titulo": "Creación de Insignias Digitales",
+                    "descripcion": "Reconocemos logros con credenciales visuales compartibles."
+                }
+            ]
+        },
+        "valores": {
+            "titulo": "Nuestros Valores",
+            "opciones": [
+                {
+                    "titulo": "Autenticidad",
+                    "descripcion": "Garantizamos la veracidad de cada certificación con tecnología inmutable."
+                },
+                {
+                    "titulo": "Innovación",
+                    "descripcion": "Apostamos por la transformación digital en certificaciones."
+                },
+                {
+                    "titulo": "Exclusividad",
+                    "descripcion": "Certificados con un valor único y diferenciado."
+                },
+                {
+                    "titulo": "Confianza",
+                    "descripcion": "Brindamos seguridad y transparencia en cada acreditación emitida."
+                }
+            ]
+        },
+        "contacto": {
+            "titulo": "¿Necesitas ayuda? Estamos aquí para ti",
+            "descripcion": "Contáctanos y responderemos en menos de 24 horas.",
+            "telefono": "Teléfono: +51 935 827 678",
+            "correo": "Correo: soporte@certif.digital",
+            "form": {
+                "nombre": "Nombre",
+                "email": "Email",
+                "mensaje": "Mensaje",
+                "boton": "Enviar consulta"
+            }
+        }
+    },
+    "legal": {
+        "titulo": "Términos y Condiciones",
+        "fecha": "Última actualización: Marzo 2025",
+        "secciones": [
+            {
+                "titulo": "1. Introducción",
+                "contenido": "Bienvenido a <strong>Certif Digital</strong>. Al acceder y utilizar nuestro sitio web, aceptas cumplir con los siguientes términos y condiciones. Si no estás de acuerdo con estos términos, te recomendamos que no utilices nuestros servicios."
+            },
+            {
+                "titulo": "2. Uso del Servicio",
+                "contenido": "Certif Digital proporciona certificaciones digitales verificables. El uso de nuestros servicios está destinado únicamente para fines legítimos y educativos. Está estrictamente prohibido: <ul><li>Proporcionar información falsa para la obtención de certificados.</li><li>Modificar, alterar o manipular cualquier certificado emitido a través de nuestro sistema.</li><li>Acceder a información de otros usuarios sin autorización.</li><li>Distribuir contenido malicioso o que pueda comprometer la seguridad de la plataforma.</li></ul>El incumplimiento de estas normas resultará en la suspensión inmediata del servicio y, en casos graves, en acciones legales."
+            },
+            {
+                "titulo": "3. Protección de Datos",
+                "contenido": "En <strong>Certif Digital</strong> valoramos y protegemos tu privacidad. Toda la información personal proporcionada por los usuarios es tratada conforme a nuestra Política de Privacidad. Tus datos no serán compartidos con terceros sin tu consentimiento, excepto cuando sea requerido por ley. Nos comprometemos a implementar las mejores prácticas de seguridad para proteger la integridad de tu información."
+            },
+            {
+                "titulo": "4. Propiedad Intelectual",
+                "contenido": "Todos los derechos de propiedad intelectual sobre los textos, imágenes, logotipos, y diseños utilizados en <strong>Certif Digital</strong> pertenecen a nuestra empresa o a sus respectivos propietarios. Queda prohibida la reproducción, distribución o modificación del contenido sin autorización previa. En caso de infracción, nos reservamos el derecho de emprender acciones legales."
+            },
+            {
+                "titulo": "5. Responsabilidad del Usuario",
+                "contenido": "El usuario es responsable del uso adecuado de su cuenta y certificaciones. No nos hacemos responsables por el mal uso de los certificados emitidos a través de la plataforma. Es responsabilidad del usuario mantener la confidencialidad de sus credenciales de acceso."
+            },
+            {
+                "titulo": "6. Disponibilidad del Servicio",
+                "contenido": "Nos esforzamos por mantener la plataforma disponible en todo momento. Sin embargo, nos reservamos el derecho de interrumpir el servicio por razones de mantenimiento, actualizaciones o fallos técnicos. En estos casos, haremos todo lo posible para restablecer el servicio en el menor tiempo posible."
+            },
+            {
+                "titulo": "7. Modificaciones a los Términos",
+                "contenido": "Nos reservamos el derecho de actualizar estos términos sin previo aviso. Te recomendamos revisar esta página periódicamente para estar informado de cualquier cambio. El uso continuado de nuestros servicios después de una modificación constituye la aceptación de los nuevos términos."
+            },
+            {
+                "titulo": "8. Contacto",
+                "contenido": "Si tienes preguntas sobre estos términos y condiciones, puedes contactarnos a través de nuestro correo electrónico: <a href='mailto:soporte@certif.digital' class='text-success'>soporte@certif.digital</a>."
+            }
+        ],
+        "boton": "Volver al Inicio"
+    },
+    "general": {
+        "contacto":{
+            "telefono":"+51935827678",
+            "correo": "soporte@certif.digital"
+        },
+        "mensajes":{
+            "servicio":"Hola quiero contratar el servicio de certificaciones digitales",
+            "consulta": "Hola tengo una consulta sobre Certif",
+            "soporte": "Hola necesito soporte técnico"
+        }
+        
+      
+    }
+}

@@ -18,6 +18,10 @@ export const alertMessages = {
     warning: {
       confirmDelete: "¿Estás seguro de eliminar este registro?",
       confirmCerrarSesion: "¿Estás seguro de desea salir?",
+      noPlantillaPredeterminada: "No se encontró una plantilla predeterminada para este badge. Por favor crea una o márcala como predeterminada.",
+      badgeNotFound: "El badge especificado no existe. Verifica el ID.",
+      orgNotValid: "Organización no válida. Verifica el ID de organización o selecciona una.",
+  
     },
     info: {
       redirect: "Redirigiendo...",

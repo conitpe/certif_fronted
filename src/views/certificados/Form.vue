@@ -10,13 +10,8 @@
         <button class="btn btn-secondary m-2" @click="cancelar">
           {{ isViewing ? "Regresar" : "Cancelar" }}
         </button>
-        <button
-          class="btn btn-outline-secondary dropdown-toggle m-2"
-          type="button"
-          id="dropdownMenuButton"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
+        <button class="btn btn-outline-secondary dropdown-toggle m-2" type="button" id="dropdownMenuButton"
+          data-bs-toggle="dropdown" aria-expanded="false">
           Opciones
         </button>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
@@ -44,71 +39,41 @@
           <!-- Email -->
           <div class="mb-3">
             <label for="email" class="form-label">Email<span class="text-danger">(*)</span></label>
-            <input
-              type="email"
-              id="email"
-              v-model="propietario.email"
-              class="form-control"
-              placeholder="Ingrese el correo electrónico"
-               :disabled="isViewing || isEditing"
-              required
-              oninvalid="this.setCustomValidity('Por favor ingrese correo')"
-              oninput="this.setCustomValidity('')"
-            />
+            <input type="email" id="email" v-model="propietario.email" class="form-control"
+              placeholder="Ingrese el correo electrónico" :disabled="isViewing || isEditing" required
+              oninvalid="this.setCustomValidity('Por favor ingrese correo')" oninput="this.setCustomValidity('')" />
           </div>
 
           <!-- DNI -->
           <div class="mb-3">
-            <label for="dni" class="form-label">Número de Documento de Identidad <span class="text-danger">(*)</span></label>
-            <input
-              type="text"
-              id="dni"
-              v-model="propietario.dni"
-              class="form-control"
-              placeholder="Ingrese el DNI"
-              :disabled="isViewing || isEditing"
-              required
+            <label for="dni" class="form-label">Número de Documento de Identidad <span
+                class="text-danger">(*)</span></label>
+            <input type="text" id="dni" v-model="propietario.dni" class="form-control" placeholder="Ingrese el DNI"
+              :disabled="isViewing || isEditing" required
               oninvalid="this.setCustomValidity('Por favor ingresa Documento de Identidad')"
-              oninput="this.setCustomValidity('')"
-            />
+              oninput="this.setCustomValidity('')" />
           </div>
 
           <!-- Nombre -->
           <div class="mb-3">
             <label for="nombre" class="form-label">Nombres<span class="text-danger">(*)</span></label>
-            <input
-              type="text"
-              id="nombre"
-              v-model="propietario.nombre"
-              class="form-control"
-              placeholder="Ingrese los nombres"
-              :disabled="isViewing || isEditing"
-              required
-              oninvalid="this.setCustomValidity('Por favor ingresa nombres')"
-              oninput="this.setCustomValidity('')"
-            />
+            <input type="text" id="nombre" v-model="propietario.nombre" class="form-control"
+              placeholder="Ingrese los nombres" :disabled="isViewing || isEditing" required
+              oninvalid="this.setCustomValidity('Por favor ingresa nombres')" oninput="this.setCustomValidity('')" />
           </div>
 
           <!-- Apellido -->
           <div class="mb-3">
             <label for="apellido" class="form-label">Apellidos<span class="text-danger">(*)</span></label>
-            <input
-              type="text"
-              id="apellido"
-              v-model="propietario.apellido"
-              class="form-control"
-              placeholder="Ingrese los apellidos"
-               :disabled="isViewing || isEditing"
-              required
-              oninvalid="this.setCustomValidity('Por favor ingresa apellidos')"
-              oninput="this.setCustomValidity('')"
-            />
+            <input type="text" id="apellido" v-model="propietario.apellido" class="form-control"
+              placeholder="Ingrese los apellidos" :disabled="isViewing || isEditing" required
+              oninvalid="this.setCustomValidity('Por favor ingresa apellidos')" oninput="this.setCustomValidity('')" />
           </div>
 
           <!-- País -->
           <div class="mb-3">
             <label for="pais" class="form-label">País</label>
-            <select id="pais" v-model="propietario.pais" class="form-select"  :disabled="isViewing || isEditing">
+            <select id="pais" v-model="propietario.pais" class="form-select" :disabled="isViewing || isEditing">
               <option value="Perú">Perú</option>
               <option value="Chile">Chile</option>
               <option value="Colombia">Colombia</option>
@@ -126,14 +91,8 @@
               <input type="radio" value="expira_en" v-model="vencimiento" :disabled="isViewing" />
               Expira En
             </label>
-            <input
-              v-if="vencimiento === 'expira_en'"
-              type="date"
-              v-model="fechaVencimiento"
-              class="form-control mt-2"
-              :disabled="isViewing"
-              required
-            />
+            <input v-if="vencimiento === 'expira_en'" type="date" v-model="fechaVencimiento" class="form-control mt-2"
+              :disabled="isViewing" required />
           </div>
 
           <!-- Notificación -->
@@ -241,16 +200,22 @@ export default {
         };
         const response = await axios.post(`/certificados/emitir`, payload);
         console.log(response);
-        
+
         showSuccess("create");
         this.$router.push(`/certificados/${this.idBadge}`);
       } catch (error) {
-        const errMsg = error.response?.data?.message || error.message;
+        console.error("Error al emitir certificado:", error);
+
+        const errMsg = error?.response?.data?.message || error.message || "Error desconocido";
+
         if (errMsg.includes("plantilla predeterminada")) {
-          showWarning(errMsg);
-        } else {
-          showError("create");
+          showWarning("noPlantillaPredeterminada");
+        } else if (errMsg.includes("Badge") && errMsg.includes("no encontrado")) {
+          showWarning("badgeNotFound");
+        } else if (errMsg.includes("Organización")) {
+          showWarning("orgNotValid");
         }
+
       } finally {
         this.cargando = false;
       }
@@ -301,8 +266,8 @@ export default {
           : "sin_vencimiento";
         this.fechaVencimiento = response.data.fecha_expiracion;
         this.idioma = response.data.idioma;
-        
-        
+
+
       } catch (error) {
         showError("fetch");
       } finally {
